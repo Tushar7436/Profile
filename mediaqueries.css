@@ -67,6 +67,7 @@
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .contact-info-container {
     margin: 0;
@@ -96,6 +97,7 @@
   }
   .title {
     font-size: 2rem;
+    justify-content: center;
   }
   .text-container {
     text-align: justify;

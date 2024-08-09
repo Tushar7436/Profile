@@ -171,6 +171,7 @@ section {
 
 .section__pic-container {
   display: flex;
+  justify-content: center;
   height: 400px;
   width: 400px;
   margin: auto 0;
@@ -281,11 +282,17 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+  align-items: center;
 }
 
 .about-pic {
   border-radius: 2rem;
+  transition: transform 0.3s ease-in-out;
 }
+.about-pic:hover{
+  transform: scale(1.1)
+}
+
 
 .arrow {
   position: absolute;
@@ -295,7 +302,7 @@ section {
 
 .details-container {
   padding: 1.5rem;
-  flex: 1;
+
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -321,6 +328,9 @@ section {
 }
 
 .experience-sub-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
@@ -332,6 +342,11 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+.mid-content{
+  display: flex;
+  border:black;
+  border-radius: 2px;
+}
 
 .article-container {
   display: flex;
@@ -339,13 +354,13 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  justify-content: flex-start;
   gap: 0.5rem;
 }
 
@@ -357,6 +372,7 @@ article .icon {
 
 #projects {
   position: relative;
+  padding-bottom: 100px;
 }
 
 .color-container {
@@ -368,6 +384,7 @@ article .icon {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+  object-fit: cover;
 }
 
 .project-title {
@@ -383,6 +400,7 @@ article .icon {
 /* CONTACT */
 
 #contact {
+  margin-top: auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
